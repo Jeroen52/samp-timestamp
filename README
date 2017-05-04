@@ -1,0 +1,63 @@
+samp-timestamp
+
+Copyright (c) 2017, Jeroen de Neef, <jeroen@jeroendeneef.com>
+All rights reserved
+
+DESCRIPTION
+-----------
+
+I was looking for a way to automatically include and define the build timestamp in a compilation of a gamemode.
+So I copied most of my samp-git-hash project and changed it to print timestamps instead.
+
+OVERVIEW
+--------
+
+samp-timestamp:
+
+samp-timestamp:
+	The binary that generates the include for Pawn.
+	
+DEPENDENCIES
+------------
+
+As far as I am aware, there are no dependencies.
+
+BINARIES
+--------
+
+There are compiled binaries available for Windows operating systems.
+It is very easy to compile this for Linux, but there is no official SA:MP Pawn compiler for Linux.
+
+INSTALLATION
+------------
+
+Compile:
+	samp-timestamp.c
+		Using GCC: gcc samp-timestamp.c -o samp-timestamp
+		Using Makefile: make
+		
+Alternative:
+	It is possible to install the program on CentOS 6 and 7 using the RPM packages below or after configuring YUM with the repository below. The program can be accessed after installing using 'samp-timestamp'.
+
+RPM package
+-----------
+
+There are RPM packages available, these have been built on CentOS 6 and 7.
+CentOS 6: <https://rpm.jeroendeneef.com/jeroendeneef/CentOS/6/i386/samp-timestamp-1.0.0-1.el6.i686.rpm>, <https://rpm.jeroendeneef.com/jeroendeneef/CentOS/6/x86_64/samp-timestamp-1.0.0-1.el6.x86_64.rpm>, <https://rpm.jeroendeneef.com/jeroendeneef/CentOS/6/SRPMS/samp-timestamp-1.0.0-1.el6.src.rpm>
+CentOS 7: <https://rpm.jeroendeneef.com/jeroendeneef/CentOS/7/x86_64/samp-timestamp-1.0.0-1.el7.centos.x86_64.rpm>, <https://rpm.jeroendeneef.com/jeroendeneef/CentOS/7/SRPMS/samp-timestamp-1.0.0-1.el7.centos.src.rpm>
+
+YUM repository
+--------------
+
+To install 'samp-timestamp', you need to configure YUM with my repository, to add my YUM repository you need to use the following Shell script: 'curl -o /etc/yum.repos.d/jeroendeneef.repo https://rpm.jeroendeneef.com/jeroendeneef/CentOS/jeroendeneef.repo'.
+This program is available in the repository under 'samp-timestamp'.
+
+SUPPORT
+-------
+
+Create an issue at <https://github.com/Jeroen52/samp-timestamp> if you need any help.
+
+HOW TO CONTRIBUTE
+-----------------
+
+Fork this repository and make a pull request when done.
