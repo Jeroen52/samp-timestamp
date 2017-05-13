@@ -60,5 +60,5 @@ store_data(const char *filepath, const char *data)
 		fclose(fp);
 		return 0;
 	}
-	return 1;
+	return 0;
 }
