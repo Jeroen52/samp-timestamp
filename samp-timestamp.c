@@ -37,6 +37,7 @@ int main()
 			getchar();
 		#endif
 	#endif
+	return 0;
 }
 
 AppendCurrentTimeToString(char *target)
@@ -47,7 +48,7 @@ AppendCurrentTimeToString(char *target)
 	time ( &rawtime );
 	timeinfo = localtime ( &rawtime );
 	strcat(str, asctime (timeinfo));
-	return 1;
+	return 0;
 }
 
 store_data(const char *filepath, const char *data)
@@ -57,7 +58,7 @@ store_data(const char *filepath, const char *data)
 	{
 		fputs(data, fp);
 		fclose(fp);
-		return 1;
+		return 0;
 	}
-	return 0;
+	return 1;
 }
